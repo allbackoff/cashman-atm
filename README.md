@@ -7,7 +7,7 @@ Docker was used to set up the automatic build for this project.
 
 You can run the application by pulling from Docker Hub:
 
-`docker run -d -p 8000:8000 allbackoff/cashman-atm`
+`$docker run -d -p 8000:8000 allbackoff/cashman-atm`
 
 This executes automated tests and then builds the application.
 
