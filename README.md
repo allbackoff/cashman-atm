@@ -26,13 +26,15 @@ You can initialize the ATM by sending the POST request with contents in JSON for
 
 Response will contain the information regarding amount of each type of banknote in the newly created session.
 
-Similarly, you can deposit some amount by sending JSON in that format.
+Similarly, you can deposit some amount by sending JSON in that format to `/atm/deposit/`
 
 ## Withdraw
 
 To check withdrawal, first you should have a initialized session. 
 
 Then you can send the POST request with just a number to `/atm/withdraw/`
+
+During both deposit and withdrawal transactions, application will use the latest session present.
 
 
 ## Libraries used
