@@ -1,5 +1,5 @@
 # cashman-atm
-REST API for an ATM-style cash dispensing application
+REST API for an ATM-style cash dispensing application.
 
 ## How to build and run the application
 
@@ -33,6 +33,8 @@ Similarly, you can deposit some amount by sending JSON in that format to `/atm/d
 To check withdrawal, first you should have a initialized session. 
 
 Then you can send the POST request with just a number to `/atm/withdraw/`
+
+The result of this operation will be presented as a JSON with combination of banknotes which sum up to the requested amount.
 
 During both deposit and withdrawal transactions, application will use the latest session present.
 
